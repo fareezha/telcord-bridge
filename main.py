@@ -91,7 +91,7 @@ async def forward_to_discord(update: Update, context: ContextTypes.DEFAULT_TYPE)
         r.raise_for_status()
 
         # Kalo gamau ada balasan "udah ke-forward" di Telegram, hapus / komen line di bawah ini
-        # await message.reply_text("✅")
+        await message.reply_text("✅")
 
     except Exception as e:
         logging.error(f"Error: {e}")
